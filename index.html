@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>WELLBEING</title>
+    <link rel="icon" href="images/chakra.png" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -15,57 +23,77 @@
     <nav class="navbar navbar-expand-lg  ftco-navbar-light">
         <div class="container-xl">
             <a class="navbar-brand" href="index.html">
-                Well<small>being.</small>
-                <span>Finance &amp; Consultation</span>
+                <div class="d-flex align-items-center">
+                    <img src="images/wheel-logo.png" alt="logo" class="img-fluid"
+                        style="width: 60px; height: auto; margin-right: 5px;">
+                    <div class="d-flex flex-column" style="gap: 5px;">
+                        <div class="small-text">
+                            <div class="d-flex justify-content-center">Organizational</div>
+                            <div class="d-flex justify-content-center">Well<small class="small-text"> being</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span> Menu
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Framework</a></li>
-                    <li class="nav-item"><a class="nav-link" href="work.html">Lifecycle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eightfoldpath">Eightfold Paths</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#life-cycle">Lifecycle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interconnection">Interconnection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#founder">Founder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="slider-hero">
+    <section id="home" class="slider-hero">
         <div class="overlay"></div>
         <div class="tns-outer" id="tns1-ow">
-            <div class="tns-nav" aria-label="Carousel Pagination">
-                <button type="button" data-nav="0" aria-controls="tns1" style="" aria-label="Carousel Page 1" class=""
-                    tabindex="-1">
-                </button>
-                <button type="button" data-nav="1" aria-controls="tns1" style=""
-                    aria-label="Carousel Page 2 (Current Slide)" class="tns-nav-active">
-                </button>
-            </div>
+            <div class="tns-nav" aria-label="Carousel Pagination"></div>
             <div id="tns1-mw" class="tns-ovh">
                 <div class="tns-inner" id="tns1-iw">
-                    <div class="hero-slider">
+                    <div class="hero-slider" id="hero-slider">
                         <div class="item">
                             <div class="work">
                                 <div class="img img2 d-flex align-items-center js-fullheight"
-                                    style="background-image: url(images/bg-image.png);">
+                                    style="background-image: url('images/bg-image.avif');">
                                     <div class="container-xl">
                                         <div class="row d-flex justify-content-center">
                                             <div class="col-md-7">
-                                                <div class="text text-center mt-lg-5">
-                                                    <h1 class="mb-4">Organizational Wellbeing for Universal Good</h1>
-                                                    <p class="mb-4">Embrace holistic "dharma" to ensure sustainable
-                                                        success by balancing financial health, environmental respect,
-                                                        and the wellbeing of key stakeholders for universal wellbeing.
+                                                <div class="text text-center text-size mt-lg-5">
+                                                    <h1 class="mb-4">Organizational Wellbeing: Framework for Universal
+                                                        Wellbeing</h1>
+                                                    <p class="mb-4">Balance financial health, environmental respect,
+                                                        and stakeholder wellbeing through holistic "dharma" for
+                                                        sustainable success.
                                                     </p>
-                                                    <p>
-                                                        <a href="#" class="btn btn-white p-4 py-3">Get Started 
-                                                            <span class="ion-ios-arrow-round-forward"></span>
-                                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img img2 d-flex align-items-center js-fullheight"
+                                    style="background-image: url('images/bg-image1.avif');">
+                                    <div class="container-xl">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-md-7">
+                                                <div class="text text-center text-size mt-lg-5">
+                                                    <h1 class="mb-4">Organizational Wellbeing: Framework for Universal
+                                                        Wellbeing</h1>
+                                                    <p class="mb-4">Balance financial health, environmental respect,
+                                                        and stakeholder wellbeing through holistic "dharma" for
+                                                        sustainable success.
                                                     </p>
                                                 </div>
                                             </div>
@@ -80,41 +108,276 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light wheel">
+    <section id="intro" class="ftco-section bg-light intro">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-5 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up"
+                <div class="col-lg-5 heading-section text-center mb-2 aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1000">
-                    <span class="subheading">Services</span>
-                    <h2 class="mb-4">Wheel of organisational wellbeing FECSGELD</h2>
+                    <h2 class="mb-2">Introduction</h2>
+                </div>
+            </div>
+            <div class="top-text">
+                <p>Organizational wellbeing refers to the overall health, performance, and effectiveness of an
+                    organization.
+                    It is also an essential path to global wellbeing as individual organizations collectively impact the
+                    universe.
+                    The concept of wellbeing is different from success and for that matter financial success.
+                    An organization can be financially very successful, but in the process may have significantly harmed
+                    the environment through its actions.
+                    Therefore, wellbeing is not about financial performance alone but goes beyond performance to help
+                    generate sustainable performance.
+                    Ultimately the aim of every organization should be to collectively contribute positively to
+                    universal wellbeing.
+                </p>
+            </div>
+            <div class="content-wrapper">
+                <div class="image row justify-content-center">
+                    <img src="images/3_swirls.png" alt="3 Swirls Image">
+                </div>
+                <div class="text">
+                    <p>Sustainable organizational wellness requires a holistic approach. If one aspect is missing, then
+                        the others cannot be sustained for long.
+                        The framework for organizational wellbeing is developed using the concept of “dharma” which
+                        means doing the right thing, not just to oneself,
+                        but to the whole universe. It offers guidance for conducting business or operations that applies
+                        to all types of organizations.
+                        Replicating the “Dharma Chakra”, the three swirls of the framework represent
+                        <strong>suppliers, employees, and customers</strong>.
+                        They are the three jewels of any organization as suppliers, employees, and customers are three
+                        key stakeholders essential to the success of any organization.
+                        Each plays a critical role in the organization’s ecosystem, and maintaining healthy
+                        relationships with all three is vital for sustained <strong>growth,
+                            efficiency, and profitability</strong>. Representing the eight spokes along the wheel of a
+                        “Dharma Chakra”, represent the eight-fold path an organization could
+                        follow for overall wellness.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-text">
+                <p>The world faces significant challenges such as depression, natural disasters, extreme poverty,
+                    unhappiness, hunger,
+                    geopolitical disputes, aggression, inequality, physical and mental health issues, stress, lack of
+                    trust, and selfishness. A holistic approach to
+                    organizational wellbeing is required to build resilience and ensure wellbeing of every human, living
+                    organism, and our physical environment.
+                    For universal wellbeing to be achieved, both individuals and organizations need to be in a state of
+                    balance, where the needs of people and the planet
+                    are met without compromising future generations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="eightfoldpath" class="ftco-section bg-light wheel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 heading-section text-center mb-2 aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <h2 class="mb-2">Wheel of organizational wellbeing FEEDLGCS</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <img src="images/image0.png" alt="img" class="img-fluid">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chakra-Mbc3V9k41fdmhA60BaHXvGxqklnygK.png"
+                        alt="Organizational Wellbeing Wheel" class="img-fluid" style="width: 700px; height: auto;"
+                        usemap="#wheel-map">
+
+                    <map name="wheel-map">
+                        <area shape="poly" coords="300,300,300,100,450,175" href="pages/financial.html" alt="Financial"
+                            data-highlight="financial">
+                        <area shape="poly" coords="300,300,450,175,525,300" href="pages/environmental.html"
+                            alt="Environmental" data-highlight="environmental">
+                        <area shape="poly" coords="300,300,525,300,450,425" href="pages/diversity.html" alt="Diversity"
+                            data-highlight="diversity">
+                        <area shape="poly" coords="300,300,450,425,300,500" href="pages/leadership.html"
+                            alt="Leadership" data-highlight="leadership">
+                        <area shape="poly" coords="300,300,300,500,150,425" href="pages/communication.html"
+                            alt="Communication" data-highlight="communication">
+                        <area shape="poly" coords="300,300,150,425,75,300" href="pages/social.html" alt="Social"
+                            data-highlight="social">
+                        <area shape="poly" coords="300,300,75,300,150,175" href="pages/governance.html" alt="Governance"
+                            data-highlight="governance">
+                        <area shape="poly" coords="300,300,150,175,300,100" href="pages/ethics.html" alt="Ethics"
+                            data-highlight="ethics">
+                    </map>
+
+                    <svg class="highlight" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                        <path id="financial" d="M300,300 L300,100 A200,200 0 0,1 450,175 Z" fill="blue" />
+                        <path id="environmental" d="M300,300 L450,175 A200,200 0 0,1 525,300 Z" fill="blue" />
+                        <path id="diversity" d="M300,300 L525,300 A200,200 0 0,1 450,425 Z" fill="blue" />
+                        <path id="leadership" d="M300,300 L450,425 A200,200 0 0,1 300,500 Z" fill="blue" />
+                        <path id="communication" d="M300,300 L300,500 A200,200 0 0,1 150,425 Z" fill="blue" />
+                        <path id="social" d="M300,300 L150,425 A200,200 0 0,1 75,300 Z" fill="blue" />
+                        <path id="governance" d="M300,300 L75,300 A200,200 0 0,1 150,175 Z" fill="blue" />
+                        <path id="ethics" d="M300,300 L150,175 A200,200 0 0,1 300,100 Z" fill="blue" />
+                    </svg>
                 </div>
             </div>
     </section>
 
-    <section class="ftco-section life_cycle">
+    <!-- <section id="eightfoldpath" class="ftco-section bg-light eightfoldpath">
+        <div class="container">
+            <div class="col-lg d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Financial</h2>
+                                <p class="mb-0">financial well-being of an organisation refers to its ability to meet
+                                    its financial obligations,
+                                    sustain its operations, and maintain long-term financial health. This involves key
+                                    factors such as profitability,
+                                    liquidity, cash flow management, debt management, operational efficiency, capital
+                                    structure, resilience and risk management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Environmental</h2>
+                                <p class="mb-0">refers to how well the organisation manages its impact on the
+                                    environment and promotes sustainability.
+                                    This encompasses policies, practices, and strategies aimed at minimising negative
+                                    environmental effects while
+                                    enhancing positive contributions to environmental health. Key environmental aspects
+                                    include sustainable resource use,
+                                    waste management, carbon footprint reduction, environmental compliance, green
+                                    innovation, efforts to become nature
+                                    positive among others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Social</h2>
+                                <p class="mb-0">social well-being of an organisation refers to the overall health and
+                                    satisfaction of its employees,
+                                    as well as the impact the organisation has on the broader community and society. It
+                                    encompasses several key dimensions
+                                    such as employee satisfaction, diversity and inclusion, mental and physical health,
+                                    community engagement,
+                                    giving back to the society and have having an overall positive impact on a broader
+                                    group of stakeholders such as
+                                    suppliers, customers, investors and lenders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Leadership</h2>
+                                <p class="mb-0">leaders of an organisations are expected to lead with righteousness in
+                                    intention, speech,
+                                    action, and effort. Leaders who demonstrate integrity, transparency, and fairness
+                                    build trust within
+                                    their teams and among outside stakeholders. This trust leads to stronger
+                                    relationships, increased loyalty,
+                                    and better organisational performance. Effective leaders provide a clear vision and
+                                    direction for the organisation
+                                    and its stakeholders, helping to align team efforts and strategies with the overall
+                                    goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Communication</h2>
+                                <p class="mb-0">communication is essential for fostering a productive, cohesive, and
+                                    successful organisation.
+                                    Information communicated by any organisation should be based on facts, with the aim
+                                    of eliminating misinformation
+                                    and disinformation. Organisations should provide timely, effective and efficient
+                                    information to both internal and
+                                    external stakeholders. Effective communication fosters teamwork and collaboration,
+                                    allowing employees, customers and
+                                    suppliers to share ideas, provide feedback, and work together towards common goals.
+                                    Clear communication also helps
+                                    reduce misunderstandings and confusion, enabling various stakeholders to focus on
+                                    their role and help them make
+                                    informed decisions or complete their responsibilities more efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Diversity</h2>
+                                <p class="mb-0">fostering diversity and mindset free of prejudice within an organisation
+                                    not only promotes a positive workplace culture but also drives better business
+                                    outcomes and
+                                    adaptability in a rapidly changing environment. Diverse teams bring together
+                                    different perspectives,
+                                    experiences, and ideas, which can lead to more innovative solutions and creative
+                                    problem-solving.
+                                    A diverse workforce enhances an organisation’s ability to engage with global markets
+                                    and understand
+                                    cultural nuances, leading to more effective communication and collaboration.
+                                    Diversity in the workplace
+                                    is also about respect and opportunity for individuals and embracing differences in
+                                    ethnicity,
+                                    gender, language and religion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Governance</h2>
+                                <p class="mb-0">good governance is essential for fostering trust, improving performance,
+                                    and ensuring the
+                                    long-term success of an organisation. It ensures that leaders and decision-makers
+                                    are held accountable
+                                    for their actions. This fosters trust among stakeholders, including employees,
+                                    customers, investors,
+                                    and the community. Therefore, good governance is crucial for organisations as it
+                                    lays the foundation
+                                    for effective management, accountability, and transparency through offering of
+                                    effective and efficient
+                                    advice and monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center align-items-stretch services-wrap">
+                        <div class="services">
+                            <div class="text">
+                                <h2>Ethics</h2>
+                                <p class="mb-0">ethics is integral to an organisation's success, influencing its
+                                    culture, operations, and
+                                    relationship with stakeholders while providing a foundation for sustainable growth
+                                    and reputation.
+                                    Ethical behavior fosters trust among employees, customers, suppliers and other
+                                    stakeholders. A strong
+                                    ethical foundation instil trust and enhances an organisation's reputation, making it
+                                    more attractive to
+                                    suppliers, customers, investors, and employees, both current and prospective.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="life-cycle" class="ftco-section life-cycle">
         <div class="container-xl">
             <div class="row g-lg-5">
                 <div class="col-lg-6 order-lg-last heading-section d-flex align-items-center aos-init aos-animate"
                     data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="mt-0 my-lg-5 py-5">
-                        <!-- <span class="subheading">About Union Corporation</span> -->
-                        <h2 class="mb-4">Organisational life cycle and implementation of FECSGELD</h2>
-                        <p>The life cycle of an organisation typically follows several stages as it evolves, similar to
-                            the life cycle of a living organism. Irrespective of the stage in the life cycle, an
-                            organisation is expected to implement the framework based on FECSGELD effectively and
-                            efficiently. Organisations could adopt and embrace the eightfold path to wellbeing. It can
-                            be part of their charter. As organisations practice and implement the either fold path to
+                    <div class="mt-0 my-lg-5 py-5 text">
+                        <h2 class="mb-4">Organizational Life Cycle and Implementation of FEEDLGCS</h2>
+                        <p>The life cycle of an organization typically follows several stages as it evolves, similar to
+                            the life cycle of a living organism. Irrespective of its stage in the life cycle,
+                            an organization is expected to implement the FEEDLGCS framework effectively and efficiently. Organizations can adopt and embrace the eightfold path to wellbeing. This can
+                            be part of their charter. As organizations practice and implement the fold path to
                             wellbeing, their performance will improve with time as they experience cultural change.
                             However, the intensity and the scope of application would vary depending on the life cycle
-                            stage. For example, a start-up organisation is not expected to make profit, but should have
+                            stage. For example, a start-up organization is not expected to make profit but should have
                             consistent cash flow to ensure its commitment to ongoing projects, and payments to suppliers
                             and employees.</p>
-                        <p class="mt-4"><a href="#" class="btn btn-primary py-3 px-4">Learn More</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
@@ -131,7 +394,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex align-items-stretch services-wrap">
-                            <div class="services active">
+                            <div class="services">
                                 <div class="icon"><span class="flaticon-research"></span></div>
                                 <div class="text">
                                     <h2>Growth</h2>
@@ -171,44 +434,61 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-image img individual">
+    <section id="interconnection" class="ftco-section ftco-image img individual">
         <div class="container">
-            <div class="row justify-content-end">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 heading-section aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                    <span class="subheading">About Well Being</span>
-                    <h2 class="mb-4">Individual wellbeing - organisational wellbeing - universal wellbeing</h2>
-                    <p style="color: black;">Individual, organisational, and universal wellbeing are deeply
-                        interconnected, with each influencing the other.
-                        When individuals experience high levels of wellbeing, they are more productive and engaged,
-                        which strengthens
-                        organisational wellbeing through better performance and collaboration. Healthy organisations
-                        contribute to universal
-                        wellbeing by adopting responsible business practices and engaging in community activities that
-                        enhance societal welfare.
-                        Conversely, when individuals or organisations suffer, it can lead to broader issues like social
-                        tensions and environmental harm,
-                        compromising universal wellbeing. Organisations that prioritise wellbeing ensure employee
-                        satisfaction and productivity,
-                        which in turn fosters a positive cycle that feeds back into individual wellbeing. Ultimately,
-                        achieving universal wellbeing requires
-                        a balanced state where the needs of individuals, organisations, and the planet are met
-                        sustainably, supporting long-term societal progress.</p>
+                    <h2 class="mb-4">Individual wellbeing - organizational wellbeing - universal wellbeing</h2>
+                    <p class="text" style="color: black;">The connection between individual wellbeing, organisational
+                        wellbeing,
+                        and universal wellbeing is deeply intertwined, as each level influences the others. Individual
+                        wellbeing fosters
+                        better performance and collaboration, strengthening organisational wellbeing. Healthy
+                        organisations, in turn,
+                        contribute to universal wellbeing by engaging in responsible business practices and community
+                        engagement,
+                        which elevate societal welfare. When individuals experience high levels of wellbeing, they are
+                        more productive,
+                        motivated, and engaged. This positive state contributes to organisational wellbeing by fostering
+                        a healthy work environment,
+                        better collaboration, and higher performance. By ensuring that both individuals and
+                        organisations are in a state of balance,
+                        the resulting alignment supports sustainable development and long-term societal progress. In
+                        contrast,
+                        when either individuals or organisations suffer, it can lead to broader issues that compromise
+                        universal wellbeing,
+                        such as social tensions, environmental harm, and health crises. At the universal level, the
+                        collective wellbeing of
+                        individuals contributes to societal and global health, improving quality of life, reducing
+                        social tensions,
+                        and promoting sustainable development. An organisation that prioritises wellbeing ensures its
+                        employees are supported,
+                        leading to greater employee satisfaction and productivity. This positive cycle feeds back into
+                        individual wellbeing,
+                        as employees feel valued and motivated. On a broader scale, organisations with a focus on
+                        wellbeing contribute to
+                        societal welfare through ethical business practices, corporate social responsibility (CSR), and
+                        sustainable operations,
+                        which align with universal wellbeing goals like reducing inequality and promoting environmental
+                        sustainability.
+                        Therefore, universal wellbeing depends on the health of individuals and organisations. For
+                        universal wellbeing to be achieved,
+                        both individuals and organisations need to be in a state of balance, where the needs of people
+                        and the planet are met without
+                        compromising future generations.</p>
                 </div>
                 <div class="col-md-6 heading-section aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/image1.png" alt="img" class="img-fluid">
+                    <img src="images/lifecycle.png" alt="img" class="img-fluid">
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="ftco-section team">
+    <section id="founder" class="ftco-section founder">
         <div class="container">
             <div class="row justify-content-center pb-4">
                 <div class="col-lg-7 text-center heading-section aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1000">
-                    <span class="subheading">Meet Our Brilliant Minds</span>
-                    <h2 class="mb-5">Our Leadership Team</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -216,28 +496,21 @@
                     data-aos-duration="1000">
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch" style="background-image: url(images/staff-1.png);">
+                            <div class="img align-self-stretch" style="background-image: url(images/member1.png);">
                             </div>
                         </div>
                         <div class="text text-center">
                             <h3 class="mb-2">Dr. Mukesh Garg</h3>
-                            <span class="position mb-2">President & CEO</span>
+                            <span class="position mb-2">Founder</span>
                             <div class="faded">
                                 <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa fa-twitter"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa fa-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa fa-google"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"
-                                            class="d-flex align-items-center justify-content-center"><span
-                                                class="fa fa-instagram"></span></a></li>
+                                    <li class="ftco-animate">
+                                        <a href="https://www.linkedin.com/in/mukesh-garg-06b1a143/"
+                                            class="d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-linkedin"></span>
+                                        </a>
+                                    </li>
                                 </ul>
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                             </div>
                         </div>
                     </div>
@@ -246,67 +519,87 @@
         </div>
     </section>
 
-    <footer class="ftco-footer img" style="background-image: url(img.jpg);">
+    <footer id="contact" class="ftco-footer">
         <div class="overlay"></div>
         <div class="container-xl">
-            <div class="row mb-5 justify-content-between">
-                <div class="col-md-6 col-lg">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-lg-4">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2 logo d-flex">
                             <a class="navbar-brand" href="index.html">
-                                Well<small>being.</small>
-                                <span>Finance &amp; Consultation</span>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/wheel-logo.png" alt="logo" class="img-fluid"
+                                        style="width: 60px; height: auto; margin-right: 5px;">
+                                    <div class="d-flex flex-column" style="gap: 5px;">
+                                        <div class="small-text">
+                                            <div class="d-flex justify-content-center">Organizational</div>
+                                            <div class="d-flex justify-content-center">Well<small class="small-text"
+                                                    style="color: #58A1CC;"> being</small></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </a>
                         </h2>
-                        <p>Organizational wellbeing, rooted in holistic "dharma," ensures sustainable
-                            success by balancing financial health, environmental respect,
-                            and the wellbeing of suppliers, employees, and customers for universal good.</p>
-                        <ul class="ftco-footer-social mt-4">
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                        </ul>
+                        <p class="text">Rooted in holistic "dharma," organizational wellbeing balances financial health,
+                            environmental respect, and stakeholder wellbeing for sustainable success.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Services</h2>
-                        <div class="d-md-flex">
+                        <h2 class="ftco-heading-2">Eightfold Paths</h2>
+                        <div class="d-flex">
                             <ul class="list-unstyled w-100">
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Financial</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Environmental</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Social</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Communication</a></li>
+                                <li><a href="pages/communication.html">
+                                        Communication
+                                    </a>
+                                </li>
+                                <li><a href="pages/diversity.html">
+                                        Diversity
+                                    </a>
+                                </li>
+                                <li><a href="pages/environmental.html">
+                                        Environmental
+                                    </a>
+                                </li>
+                                <li><a href="pages/ethics.html">
+                                        Ethics
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="list-unstyled w-100">
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Governance</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Ethics</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Leadership</a></li>
-                                <li><a href="#"><span class="ion ion-ios-arrow-round-forward me-2">
-                                        </span>Diversity</a></li>
+                                <li><a href="pages/financial.html">
+                                        Financial
+                                    </a>
+                                </li>
+                                <li><a href="pages/governance.html">
+                                        Governance
+                                    </a>
+                                </li>
+                                <li><a href="pages/leadership.html">
+                                        Leadership
+                                    </a>
+                                </li>
+                                <li><a href="/pages/social.html">
+                                        Social
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Team</h2>
+                        <h2 class="ftco-heading-2">Founder</h2>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img img rounded" style="background-image: url(images/image_1.jpg);"></a>
                             <div class="text">
-                                <div class="meta">
-                                    <!-- <div><a href="#"><span class="fa fa-calendar"></span> Jan. 27, 2021</a></div> -->
-                                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
-                                </div>
-                                <h3 class="heading"><a href="#">Dr. Mukesh Garg</a></h3>
+                                <h3 class="heading">Dr. Mukesh Garg</h3>
+                                <ul class="ftco-footer-social mt-4">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/mukesh-garg-06b1a143/">
+                                            <span class="fa fa-linkedin"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -316,18 +609,18 @@
                         <h2 class="ftco-heading-2">Have a Query?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon fa fa-map marker"></span><span class="text">Address</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">Contact
-                                            No</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span>
-                                        <span class="text">info@yourdomain.com</span></a></li>
+                                <li><a href="#contact">
+                                        <span class="icon fa fa-envelope"></span>
+                                        <span class="text">mukeshgarg1@yahoo.com</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid px-0 py-5 bg-darken">
+        <div class="container-fluid px-0 py-3 bg-darken">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -342,8 +635,33 @@
         </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const areas = document.querySelectorAll('area');
+        const highlights = document.querySelectorAll('.highlight path');
 
+        areas.forEach(area => {
+            area.addEventListener('mouseover', () => {
+                const highlightId = area.getAttribute('data-highlight');
+                const highlightElement = document.getElementById(highlightId);
+                if (highlightElement) {
+                    highlightElement.style.opacity = '0.3';
+                }
+            });
+
+            area.addEventListener('mouseout', () => {
+                const highlightId = area.getAttribute('data-highlight');
+                const highlightElement = document.getElementById(highlightId);
+                if (highlightElement) {
+                    highlightElement.style.opacity = '0';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
